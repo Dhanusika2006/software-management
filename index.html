@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personnel Management System</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Personnel Management System</h1>
+      <p>Manage Employees Professionally</p>
+    </div>
+
+    <div class="dashboard">
+
+      <div class="card">
+        <h2 id="totalEmployees">0</h2>
+        <p>Total Employees</p>
+      </div>
+
+      <div class="card">
+        <h2>HR</h2>
+        <p>Department</p>
+      </div>
+
+      <div class="card">
+        <h2>Active</h2>
+        <p>Status</p>
+      </div>
+
+    </div>
+
+    <div class="form-box">
+      <input type="text" id="name" placeholder="Employee Name">
+      <input type="text" id="department" placeholder="Department">
+      <input type="text" id="role" placeholder="Role">
+
+      <button onclick="addEmployee()">Add Employee</button>
+    </div>
+
+    <div class="table-section">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="employeeTable">
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
